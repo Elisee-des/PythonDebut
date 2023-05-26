@@ -1,0 +1,11 @@
+//============================================//
+                RESUMER FORMATION
+
+*Les Variables
+*La boucle While
+*La gestion des exception:
+try:
+    //
+catch:
+    //
+*Le debuging

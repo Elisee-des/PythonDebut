@@ -1,6 +1,8 @@
 
-nom = input("Quel est ton nom ? ")
-age = input("Quel est votre age ? ")
+nom = ""
+while nom == "":
+    nom = input("Quel est ton nom ? ")
+
 
 age = 0
 while age == 0:
