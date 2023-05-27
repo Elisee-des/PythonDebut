@@ -1,6 +1,6 @@
 
 def afficher_information_personne(nom_utlisateur, age_utilisateur):
-    print("Vous vous appelz " + nom_utlisateur + ", votre age est " + str(age_utilisateur) + ".")
+    print("Vous vous appelez " + nom_utlisateur + ", votre age est " + str(age_utilisateur) + ".")
     print("L'annee prochain vous aurez " + str(age_utilisateur+1) + " ans")
     
     if age_utilisateur == 17:
@@ -37,14 +37,18 @@ def demander_age(nom_personne):
         return age
 
 
-nom_utlisateur = demander_nom()
-nom_utlisateur2 = demander_nom()
+# nom_utlisateur = demander_nom()
+# nom_utlisateur2 = demander_nom()
 
-age_utilsateur = demander_age(nom_utlisateur)
-age_utilsateur2 = demander_age(nom_utlisateur2)
+# age_utilsateur = demander_age(nom_utlisateur)
+# age_utilsateur2 = demander_age(nom_utlisateur2)
 
 
-afficher_information_personne(nom_utlisateur, age_utilsateur)
-afficher_information_personne(nom_utlisateur2, age_utilsateur2)
+# afficher_information_personne(nom_utlisateur, age_utilsateur)
+# afficher_information_personne(nom_utlisateur2, age_utilsateur2)
 
+for i in range(0, 2):
+    nom = "personne" + str(i+1)
+    age = demander_age(nom)
+    afficher_information_personne(nom, age)
 
