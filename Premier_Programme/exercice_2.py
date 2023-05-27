@@ -1,4 +1,10 @@
 
+def demander_nom():
+    nom = ""
+    while nom == "":
+        nom = input("Quel est ton nom ? ")
+    return nom
+
 def demander_age():
     age = 0
     while age == 0:
@@ -9,12 +15,10 @@ def demander_age():
             print("ERREUR: Vous devez entrez un chiffre.")
         return age
 
-nom = ""
-while nom == "":
-    nom = input("Quel est ton nom ? ")
+nom_utlisateur = demander_nom()
 
 age_demander = demander_age()
 
 
-print("Vous vous appelz " + nom + ", votre age est " + str(age_demander) + ".")
+print("Vous vous appelz " + nom_utlisateur + ", votre age est " + str(age_demander) + ".")
 print("L'annee prochain vous aurez " + str(age_demander+1) + " ans")
